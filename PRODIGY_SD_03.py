@@ -100,6 +100,7 @@ class ContactApp:
         with open('contacts.json', 'w') as file:
             json.dump(self.contacts, file, indent=4)
 
+
 root = tk.Tk()
 app = ContactApp(root)
 root.mainloop()
