@@ -1,10 +1,10 @@
 import tkinter as tk
 
 def convert_temperature():
-    num = float(entry_temperature.get())
-    temp = unit.get()
+    num = float(entry_temperature.get()) #coverts the user value into a float-point number
+    temp = unit.get() #checkes the user's choice of Celius, Farenheit or Kelvin
     result = ""
-    
+    #this if-elif-elif bridge converts the given temprature into the other two temprature units
     if temp == 'C':
         fr = num*(9/5) + 32
         kl = num + 273.15
@@ -25,6 +25,7 @@ def convert_temperature():
     
     label_result.config(text=result)
 
+#this bit of code is required to make the window and take the nessasary inputs
 root = tk.Tk()
 root.title("Temperature Converter")
 
