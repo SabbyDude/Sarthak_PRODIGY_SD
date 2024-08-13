@@ -10,6 +10,7 @@ elif (start == endit):
     print("The starting and ending number cannot be same")
 print(f"The number is between {start} and {endit}")
 guess = random.randint(start,endit)
+print(f"The guessed number is {guess} Note: It is only shown for test cases and will be hidden otherwise")
 count = 1
 your = int(input(f"Enter Guess No.{count}:"))
 while(guess != your):
