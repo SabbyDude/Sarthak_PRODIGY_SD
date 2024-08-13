@@ -3,9 +3,11 @@ import random
 print("Player 1, enter the following details: ")
 start = int(input("What should be the starting range of the numbers? -->"))
 endit = int(input("What should be the ending range of the numbers? -->"))
-if (start >= endit):
+if (start > endit):
 	print("The ending number is either same or smaller than the beginning number which is not allowed")
 	exit(0)
+elif (start == endit):
+    print("The starting and ending number cannot be same")
 print(f"The number is between {start} and {endit}")
 guess = random.randint(start,endit)
 count = 1
